@@ -94,10 +94,9 @@ $(".button-group").on("click", ".button", function() {
     guessValue += clickValueNumber
         console.log("Score (running total): " + guessValue);
     $("#display-total-guesses").text(guessValue);
-});
 
-//------------------------------------------------------------------------------------
-    
+
+
     if (guessValue === computerNumber) {
         console.log("Winner : " + guessValue);
         $("#alert").text("You Win!!");
@@ -110,7 +109,8 @@ $(".button-group").on("click", ".button", function() {
             reset();
             }
             else (guessValue < computerNumber) // having trouble getting this to reset or 
-                                                // return to the on.click function
+                                               // return to the on.click function
+            });
  //--------------------------------------------------------------------------------------
 
 // end of the doc.ready function

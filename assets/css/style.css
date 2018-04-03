@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+}
+
+/*.container {
+    background: lightblue;
+    width: 60%;
+    height: 800px;
+}
+*/
+#title-box {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 3px;
+    margin-left: 5px;
+    border: 1px solid black;
+    padding: 10px;
+    width: 30%;
+    float: left;
+    background: rgb(245, 158, 28);
+}
+
+#instruction-box {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-left: 5px;
+    padding: 20px;
+    border: 2px solid black;
+    overflow-wrap: normal;
+    clear: both;
+    float: left;
+    width: 50%;
+    background: rgb(243, 215, 184);
+}
+
+#computer-number {
+    text-align: left;
+    font-size: 40px;
+    margin-top: 10px;
+    margin-left: 5px;
+    padding: 50px;
+    max-height: 102px;
+    border: 2px solid black;
+    clear: both;
+    float: left;
+    width: 20%;
+    background: rgb(47, 131, 65);
+}
+
+.alert-box {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 10px;
+    padding: 5px;
+    height: 104px;
+    border: 2px solid black;
+    margin-left: 10px;
+    float: left;
+    width: 20%;
+    background: rgb(23, 228, 194);
+}
+
+#alert {
+    text-align: center;
+    font-size: 20px;
+    clear: both;
+    margin-top: 10px;
+}
+
+#win {
+    text-align: center;
+    font-size: 20px;
+    clear: both;
+    margin-top: 10px;
+}
+
+#loss {
+    text-align: center;
+    font-size: 20px;
+    clear: both;
+    margin-top: 10px;
+   
+}
+
+.button-group {
+    clear: both;
+    float: left;
+    border: 2px solid black;
+    width: 40%;
+    height: 80px;
+    margin-top: 5px;
+    margin-left: 5px;
+    background: white;
+}
+
+
+
+#button-1 {
+    border: 1px solid black;
+    width: 21%;
+    height: 58px;
+    float: left;
+    margin: 10px 2% 10px 2%;
+    content:url("../images/bjsresize.jpg");
+
+}
+
+#button-2 {
+    border: 1px solid black;
+    width: 21%;
+    height: 58px;
+    float: left;
+    margin: 10px 2% 10px 2%;
+    content:url("../images/bjsresize.jpg");
+}
+
+#button-3 {
+    border: 1px solid black;
+    width: 21%;
+    height: 58px;
+    float: left;
+    margin: 10px 2% 10px 2%;
+    content:url("../images/bjsresize.jpg");
+}
+
+#button-4 {
+    border: 1px solid black;
+    width: 21%;
+    height: 58px;
+    float: left;
+    margin: 10px 2% 10px 2%;
+    content:url("../images/bjsresize.jpg");
+}
+
+#score-box-title {
+    clear: both;
+    float: left;
+    margin-top: 5px;
+    margin-left: 5px;
+    padding-top: 6px;
+    padding-left: 5px;
+    width: 25%;
+    height: 30px;
+    border: 2px solid black;
+    background: rgb(37, 175, 164);
+}
+
+#score-box {
+    clear: both;
+    float: left;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 6px;
+    margin-left: 5px;
+    padding: 20px;
+    width: 25%;
+    height: 100px;
+    border: 2px solid black;
+    background: rgb(37, 175, 164);
+}

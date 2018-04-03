@@ -3,8 +3,9 @@ $(document).ready(function() {
 // var computerNumber 
 var wins = 0;
 var losses = 0;
-var guessValue =0
-// var randomNumberValue
+var guessValue;  // defined this variable, will add a value in the reset()
+var computerNumber; // defined this variable, will add a value in the reset()
+
  var button1Value = 0;
    // console.log("This is the var button1: " + button1Value);
  var button2Value = 0;
@@ -13,8 +14,13 @@ var guessValue =0
 
 // creating a random number for var computerNumber between 19 and 120
 // i will be calling for this variable in the reset function()
-var computerNumber = Math.floor(Math.random() * 121) + 19;
 
+ //var computerNumber = Math.floor(Math.random() * 121) + 19;
+
+ // created a function to set guessValue to 0 that can be called inside the reset or on click function
+ //function guessToZero() {
+     var guessValue = 0;
+ 
 
 
 // create a function to assign the random number to buttons
@@ -51,10 +57,15 @@ function button4() {
 //----------------------------------------------------------------------------------------        
 // creat a reset function
 function reset() {
+    
+    computerNumber = Math.floor(Math.random() * 121) + 19;
     $("#computer-number").text(computerNumber);
         console.log("This is the computers random number " + computerNumber);
-    $("#display-total-guesses").text(guessValue);
+
+    var guessValue = 0;
+    $("#display-total-guesses").text(guessValue); // what is guessValue here?
         console.log("This is the total score at the beginning of a game " + guessValue);
+
     $("#win").text("Wins: " + wins);
     $("#loss").text("Losses: " + losses);
 
@@ -68,7 +79,7 @@ function reset() {
 
 // running the reset() here. this will: 
 // 1. set the buttons to random numbers, 
-// 2. set the computer number to a random number,
+// 2. Choose a random number and set it to the computerNumber,
 // 3. set the guessValue (score) to 0,
 // 4. update the win score,
 // 5. udpade the loss score,
@@ -89,7 +100,8 @@ $(".button-group").on("click", ".button", function() {
     var clickValue = $(this).attr('data-value');
     // i changed clickValue from a string into a number with parseInt
     var clickValueNumber =parseInt(clickValue);
-        console.log("This is the value from a Button: " + clickValue);
+        console.log("This is the value from a Button: " + clickValueNumber);
+        console.log("this is the computers choice here: " + computerNumber);
     // adding the clickValueNumer to the existing var guessValue which starts at 0
     guessValue += clickValueNumber
         console.log("Score (running total): " + guessValue);
@@ -97,38 +109,28 @@ $(".button-group").on("click", ".button", function() {
 
 
 
-    if (guessValue === computerNumber) {
-        console.log("Winner : " + guessValue);
+    if (guessValue == computerNumber) {
+        console.log("Winner ,score: " + guessValue + " computerNumber: " + computerNumber);
         $("#alert").text("You Win!!");
         wins++;
+        //guessToZero();
         reset(); //where should the reset function go? it establishes the computerNumber.
         }  
         else if (guessValue > computerNumber) { //this statement does not execute?
             $("#alert").text("You Lose!!");
             losses++;
+            //guessToZero();
             reset();
             }
-            else (guessValue < computerNumber) // having trouble getting this to reset or 
-                                               // return to the on.click function
-            });
+            //else {
+            // }
+            
+           
+        });
+        
  //--------------------------------------------------------------------------------------
 
 // end of the doc.ready function
 });
 
 
-//var guessValueNumber = parseInt(guessValue);
-
-// if (guessValue < computerNumber) {
-//        $("#alert").text(" ");
-        
- //       }   else if (guessValue === computerNumber) {
- //               console.log("Winner : " + guessValue);
- //               $("#alert").text("You Win!!");
- //               wins++;
- //               reset();
- //               }   //else (guessValue > computerNumber) {
-                    //    $("#alert").text("You Lose!!");
-                    //    losses++;
-                    //    reset();
-                    //     }

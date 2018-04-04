@@ -101,7 +101,7 @@
     height: 58px;
     float: left;
     margin: 10px 2% 10px 2%;
-    content:url("../images/bjsresize.jpg");
+    content:url("../images/blueheart.png");
 
 }
 
@@ -111,7 +111,7 @@
     height: 58px;
     float: left;
     margin: 10px 2% 10px 2%;
-    content:url("../images/bjsresize.jpg");
+    content:url("../images/redheart.jpg");
 }
 
 #button-3 {
@@ -120,7 +120,7 @@
     height: 58px;
     float: left;
     margin: 10px 2% 10px 2%;
-    content:url("../images/bjsresize.jpg");
+    content:url("../images/greenheart.png");
 }
 
 #button-4 {
@@ -129,7 +129,7 @@
     height: 58px;
     float: left;
     margin: 10px 2% 10px 2%;
-    content:url("../images/bjsresize.jpg");
+    content:url("../images/yellowheart.png");
 }
 
 #score-box-title {
